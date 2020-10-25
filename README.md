@@ -4,7 +4,7 @@
 [简书配置地址]()
 ----------------------------
 ## 按需引入
-   ###安装antd组件库  cnpm install --save antd
+   ### 安装antd组件库  cnpm install --save antd
 > 1. 安装依赖包：cnpm install babel-plugin-import customize-cra react-rewired --save
 > 2. 在项目根目录新建 config-overrides.js 文件，写入以下内容：
 >> const { override, fixBabelImports } = require('customize-cra'); 
