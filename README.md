@@ -29,7 +29,7 @@
 
                 }
 --------------------------------
->**如果报错：'react-app-rewired' 不是内部或外部命令，也不是可运行的程序
+>** 如果报错：'react-app-rewired' 不是内部或外部命令，也不是可运行的程序
 是因为版本问题重新安装合适版本启动即可：cnpm i react-app-rewired@2.0.2-next.0   **
 >>>   import {Button}  from 'antd';` <Button type="primary">button</Button>`
 
