@@ -1,0 +1,55 @@
+.bjys {
+	color: #fff;
+	background: #6a6aff;
+	background:
+		radial-gradient(at center, #0075c3, #6a6aff);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+.apImgTitle {
+	position: fixed;
+	width: 42%;
+	left: 30%;
+	top: 30%;
+}
+
+.apTitle {
+	font-size: 40px;
+	color: #fff;
+	position: fixed;
+	top: 20%;
+	width: 100%;
+	text-align: center;
+}
+
+.logcon {
+	position: fixed;
+	width: 100%;
+	top: 37%;
+	text-align: center;
+}
+
+.ant-form-item-label>label {
+	color: #fff
+}
+
+.ant-checkbox-wrapper {
+	color: #fff
+}
+
+.ant-form-item-has-error .ant-form-item-explain,
+.ant-form-item-has-error .ant-form-item-split {
+	color: #fff
+}
+
+.ant-form-item {
+	margin-bottom: 46px;
+}
+
+.ant-form-item-with-help {
+	margin-bottom: 23px;
+}

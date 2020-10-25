@@ -1,0 +1,43 @@
+.header_top {
+    background-color: #1890ff;
+    color: #fff
+}
+
+.header_right {
+    width: 200px;
+    position: absolute;
+    float: right;
+    right: 50px;
+}
+
+.register {
+    width: 50%;
+    position: absolute;
+    text-align: right;
+}
+
+.login {
+    width: 50%;
+    position: absolute;
+    text-align: right;
+    float: right;
+    right: 0;
+}
+
+.loginin {
+    float: right;
+    right: 0;
+    cursor: pointer;
+    padding: 0 10px;
+    height: 64px;
+}
+
+.loginin:hover {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+}
+/*登录后下拉菜单*/
+.LoginMenu .ant-dropdown-menu-item{
+    text-align: center;
+}

@@ -1,0 +1,69 @@
+html,
+body {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    user-select: none;
+}
+
+.SearchHeader h3 {
+    text-align: center;
+}
+
+.HotSearch {
+    height: 50px;
+}
+
+.HotID {
+    width: 50px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    color: #555
+}
+
+.ant-select-item {
+    padding: 5px 0;
+}
+
+.ant-select-item-group {
+    color: #000;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+
+/*右键样式*/
+
+.rightClick .ant-dropdown-menu {
+    border-radius: 5px;
+}
+
+.rightClick .ant-dropdown-menu-item {
+    width: 200px;
+    height: 40px;
+    padding: 0 !important;
+    margin: 0;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.certain-category-search-dropdown {
+    z-index: 1000;
+}
+
+.ilove {
+    padding-left: 24px !important;
+}
+
+.findmusic:hover {
+    color: #1890ff;
+}
+
+.footer {
+    margin-bottom: 144px;
+}

@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none
+}
+
+img {
+    vertical-align: top;
+    border: none
+}
+
+a {
+    color: #fff;
+    font-size: 16px;
+}
+
+a:hover {
+    color: #000
+}
+
+#components-layout-demo-side .logo {
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px;
+}
+
+.site-layout .site-layout-background {
+    background: #fff;
+    color: #000;
+
+}
+/*左侧菜单*/
+.MenuLeft {
+    height: 100vh;
+    background: #fff;
+    overflow-y: auto;
+    position: absolute;
+}
+
+.ant-layout-sider-children {
+    padding-bottom: 63px;
+}
+.ant-layout-sider{
+    background: #fff;
+}
+.ant-layout-sider-trigger{
+    background: #1890ff;
+}
