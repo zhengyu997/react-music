@@ -36,5 +36,7 @@ github下载node源码 https://github.com/Binaryify/NeteaseCloudMusicApi
 >>>>时间插件 npm install moment --save <br/>
 >>>>可拖拽组件 npm install react-draggable --save
 
- ![](https://raw.githubusercontent.com/zy1280063347/image/main/react/img1.jpg?token=AIVWCOQ5RN6BS5V6PAMRFDK7TDCI6 "主图")
- ![](https://raw.githubusercontent.com/zy1280063347/image/main/react/img2.jpg?token=AIVWCOUFVCYCOUXCTJURHQC7TDCOW "主图")
+ ![](https://raw.githubusercontent.com/zy1280063347/image/main/react/img1.jpg?token=AIVWCOVQ4MA3Q6O5QSTGS227TDDMI "主图")
+
+
+ ![](https://raw.githubusercontent.com/zy1280063347/image/main/react/img2.jpg?token=AIVWCOU433VHSOQECA42MZC7TDDV4 "副图")
