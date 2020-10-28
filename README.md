@@ -32,5 +32,6 @@
 
 >>>>时间插件 npm install moment --save <br/>
 >>>>可拖拽组件 npm install react-draggable --save
-![](https://raw.githubusercontent.com/zy1280063347/image/main/react/img1.jpg "主图")
-![](https://raw.githubusercontent.com/zy1280063347/image/main/react/img2.jpg "主图")
+
+   ![](https://raw.githubusercontent.com/zy1280063347/image/main/react/img1.jpg "主图")
+   ![](https://raw.githubusercontent.com/zy1280063347/image/main/react/img2.jpg "主图")
