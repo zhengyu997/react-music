@@ -29,7 +29,9 @@
 npm i react-app-rewired@2.0.2-next.0 
 >>>   import {Button}  from 'antd';` <Button type="primary">button</Button>`
 
->>>  网易云音乐 NodeJS 版 API[网易云音乐API](https://neteasecloudmusicapi.vercel.app/#/ "网易云音乐API") 
+>>>  网易云音乐 NodeJS 版 API[网易云音乐API](https://neteasecloudmusicapi.vercel.app/#/ "网易云音乐API")
+
+github下载node源码 https://github.com/Binaryify/NeteaseCloudMusicApi 
 
 >>>>时间插件 npm install moment --save <br/>
 >>>>可拖拽组件 npm install react-draggable --save
