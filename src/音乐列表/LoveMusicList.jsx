@@ -19,6 +19,8 @@ class LoveMusicList extends Component {
             initLoading: true,
             visible: false,
             downloadvisible: false,
+            pageTotal: "",
+
         };
     }
     xuanTitle = (value) => {
@@ -107,7 +109,7 @@ class LoveMusicList extends Component {
     componentDidMount() {
         this.likes();
     }
-    likes = () => {
+    likes = (pageSize=10,currentPage=1) => {
         const accountID = this.state.accountID;
         let timestamp = new Date().getTime();
         Likelist(`/likelist?uid=${accountID}&timestamp=${timestamp}`).then((res) => {
@@ -116,8 +118,19 @@ class LoveMusicList extends Component {
                     initLoading: false
                 })
             } else {
-
-                Songdetail(`/song/detail?ids=${res.ids}&timestamp=${timestamp}`).then((even) => {
+                this.setState({
+                    pageTotal: res.ids
+                })
+                let arr = res.ids;
+                // let pageSize = this.state.pageSize;  //一页的总数
+                // let currentPage = this.state.currentPage;  //页数
+                let skipNum = (currentPage - 1) * pageSize;
+                let newArr = (skipNum + pageSize >= arr.length) ? arr.slice(skipNum, arr.length) : arr.slice(skipNum, skipNum + pageSize);
+                // console.log("1111", newArr)
+                this.setState({
+                    initLoading: true
+                })
+                Songdetail(`/song/detail?ids=${newArr}&timestamp=${timestamp}`).then((even) => {
                     let datas = even.songs.map((item, index) => {
                         let ms = item.dt;  //换算成时间
                         let min = Math.floor((ms / 1000 / 60) << 0);
@@ -138,6 +151,10 @@ class LoveMusicList extends Component {
 
             }
         })
+    }
+    paging = (e) => {
+
+        this.likes(e.pageSize, e.current)
     }
     render() {
 
@@ -185,16 +202,17 @@ class LoveMusicList extends Component {
                 {
                     localStorage.getItem('token') ? (
                         <Table columns={columns} locale={{ emptyText: "暂无数据" }}
+                            onChange={this.paging}
                             loading={{
                                 spinning: this.state.initLoading,
                                 tip: "加载中..."
                             }} dataSource={this.state.Listdata} size="Default" onRow={record => {
                                 return {
                                     onDoubleClick: event => { this.xuanTitle(record) }, // 双击行
-                                    // onContextMenu: event => { this.download(event, record) },//右键
+
                                 };
-                            }} pagination={{ position: ['bottomCenter'], showTotal: () => `共${this.state.Listdata.length}条`, }} />
-                    ) : <Redirect to="/"/>
+                            }} pagination={{ position: ['bottomCenter'], showTotal: () => `共${this.state.pageTotal.length}条`, total: `${this.state.pageTotal.length}` }} />
+                    ) : <Redirect to="/" />
                 }
 
 
