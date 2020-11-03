@@ -94,6 +94,7 @@ class LoveMusicList extends Component {
                             Listdata: dataSource.filter((item) => item.key !== keys),
                          
                         });
+                        this.likes()
                         message.success({ content: '删除成功', duration: 2 });
                     }
                 })
